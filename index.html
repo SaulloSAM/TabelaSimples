@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Tableas</title>
+        <meta charset="utf-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One|Roboto:300,400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+
+        <div class="light">
+
+            <table class="tabela">
+                <caption left tx-branco>Exemplo 01 - Tabela [ Breve descrição / Título da tabela ]</caption>
+                <tr tx-branco>
+                    <td bg-azul>Nome</td>
+                    <td bg-verde>Sobrenome</td>
+                    <td bg-vermelho>Profissão</td>
+                </tr>
+
+                <tr>
+                    <td>Saulo</td>
+                    <td>Sinesio</td>
+                    <td bg-cinza-claro>Dev</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" right>Enviar Formulário para Excel</td>
+                    <td left tx-vermelho>
+                        <a class="btn-tabela" href="#enviado" f-center>Enviar</a>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+
+
+
+
+        <div class="dark">
+
+            <table class="tabela">
+                <caption left tx-branco>Exemplo 02 - Tabela dentro de Tabela [ Breve descrição / Título da tabela ]</caption>
+                <thead tx-branco>
+                    <th bg-azul w-20>Nome</th>
+
+                    <th bg-verde>Informações</th>
+
+                    <th bg-vermelho>Profissão</th>
+                </thead>
+
+                <tbody>
+                    <td>Saulo</td>
+                    <td class="tabela-inside">
+                        <table>
+                            <tr>
+                                <td>Sobrenome</td>
+                                <td>Idade</td>
+                            </tr>
+
+                            <tr>
+                                <td>Sinesio</td>
+                                <td>24</td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    <td bg-cinza-claro>Dev</td>
+                </tbody>
+
+                <tfoot>
+                    <td colspan="2" right>Enviar Formulário para Excel</td>
+                    <td left tx-vermelho>
+                        <input type="button" value="Enviar" class="btn btn-enviar" f-center>
+                    </td>
+                </tfoot>
+            </table>
+            
+        </div>
+
+
+
+
+
+        <div class="light">
+
+            <table class="tabela">
+                <caption left tx-branco>Exemplo 03 - Tabela dentro de Tabela dentro de Tabela [ Breve descrição / Título da tabela ]</caption>
+                <thead tx-branco>
+                    <th bg-azul w-20>Nome</th>
+
+                    <th bg-verde>Informações</th>
+
+                    <th bg-vermelho>Profissão</th>
+                </thead>
+
+                <tbody>
+                    <td>Saulo</td>
+                    <td class="tabela-inside">
+                        <table>
+                            <tr>
+                                <td>Sobrenome</td>
+                                <td class="tabela-inside" bg-roxo tx-branco>
+                                    <p>Idade</p>
+                                    <table>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>05</td>
+                                            <td>1994</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Sinesio</td>
+                                <td>24</td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    <td bg-cinza-claro>Dev</td>
+                </tbody>
+
+                <tfoot>
+                    <td colspan="2" right>Enviar Formulário para Excel</td>
+                    <td left tx-vermelho>
+                        <input type="button" value="Enviar" class="btn btn-enviar" f-center>
+                    </td>
+                </tfoot>
+            </table>
+            
+        </div>
+
+
+
+
+        <div class="dark">
+
+            <table class="tabela">
+                <caption left tx-branco>Exemplo 04 - Já ta bom.</caption>
+                <thead tx-branco>
+                    <th bg-azul w-20>Nome</th>
+
+                    <th bg-verde>Informações</th>
+
+                    <th bg-vermelho>Profissão</th>
+                </thead>
+
+                <tbody>
+                    <td>Saulo</td>
+                    <td class="tabela-inside">
+                        <table>
+                            <tr>
+                                <td>Sobrenome</td>
+                                <td class="tabela-inside">
+                                    <p>Idade</p>
+                                    <table>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>05</td>
+                                            <td class="tabela-inside">
+                                                <table>
+                                                    <span bg-vermelho tx-branco>Ano</span>
+                                                    <tr>
+                                                        <td style="width: 25%;">1</td>
+                                                        <td style="width: 25%;">9</td>
+                                                        <td style="width: 25%;">9</td>
+                                                        <td style="width: 25%;">4</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Sinesio</td>
+                                <td>24</td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    <td bg-cinza-claro>Dev</td>
+                </tbody>
+
+                <tfoot>
+                    <td colspan="2" right>Enviar Formulário para Excel</td>
+                    <td left tx-vermelho>
+                        <input type="button" value="Enviar" class="btn btn-enviar" f-right>
+                    </td>
+                </tfoot>
+            </table>
+            
+        </div>
+
+    </body>
+</html>

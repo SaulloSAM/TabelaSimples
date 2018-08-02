@@ -1,0 +1,29 @@
+/*------------------------------------*\
+	TABLES
+https://csswizardry.com/demos/zebra-striping/
+\*------------------------------------*/
+table{
+	margin-bottom:20px;
+	width:100%;
+}
+caption{
+	margin-bottom:5px;
+}
+caption,tfoot{
+	font-family:Cambria, Georgia, "Times New Roman", serif;
+	font-style:italic;
+}
+tfoot{
+	text-align:center;
+}
+td,th{
+	padding:5px;
+	border:1px solid #333;
+}
+th:empty,
+td:empty{
+	border:none;
+}
+th{
+	font-weight:bold;
+}
